@@ -2,7 +2,7 @@ let color = '#3aa757';
 
 const clickHandler = function(e) {
     console.log(e);
-    const url = e.pageUrl;
+    let url = e.pageUrl;
     
     if (e.linkUrl) {
         url = e.linkUrl;
