@@ -9,16 +9,16 @@
   "permissions": ["storage", "activeTab", "scripting", "contextMenus"],
   "action": {
     "default_icon": {
-      "16": "/images/shallty-16x16.png",
-      "32": "/images/shallty-32x32.png",
-      "48": "/images/shallty-48x48.png",
-      "128": "/images/shallty-128x128.png"
+      "16": "/images/shallty-circle-16x16.png",
+      "32": "/images/shallty-circle-32x32.png",
+      "48": "/images/shallty-circle-48x48.png",
+      "128": "/images/shallty-circle-128x128.png"
     }
   },
   "icons": {
-    "16": "/images/shallty-16x16.png",
-    "32": "/images/shallty-32x32.png",
-    "48": "/images/shallty-48x48.png",
-    "128": "/images/shallty-128x128.png"
+    "16": "/images/shallty-circle-16x16.png",
+    "32": "/images/shallty-circle-32x32.png",
+    "48": "/images/shallty-circle-48x48.png",
+    "128": "/images/shallty-circle-128x128.png"
   }
 }
