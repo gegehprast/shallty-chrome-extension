@@ -1,6 +1,6 @@
 {
-  "name": "Getting Started Example",
-  "description": "Build an Extension!",
+  "name": "Shallty",
+  "description": "Fansub and Fanshare Indonesia Shortlink Bypasser.",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
