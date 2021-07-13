@@ -1,13 +1,13 @@
+const SHALLTY_WEB = 'https://shallty.moe/';
+
 const clickHandler = function(e) {
-    console.log(e);
     let url = e.pageUrl;
     
     if (e.linkUrl) {
         url = e.linkUrl;
     }
-
-    // Open the page up.
-    chrome.tabs.create({'url' : url });
+    
+    chrome.tabs.create({'url' : `${SHALLTY_WEB}?shortlink=${url}` });
 }
 
 const createContextMenusCallback = function(e) {
