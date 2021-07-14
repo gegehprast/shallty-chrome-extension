@@ -1,23 +1,17 @@
 const SHALLTY_WEB = 'https://shallty.moe/';
 
-const clickHandler = function(e) {
-    let url = e.pageUrl;
-    
-    if (e.linkUrl) {
-        url = e.linkUrl;
+/**
+ * 
+ * @param {number} tabId 
+ * @param {chrome.tabs.TabChangeInfo} changeInfo 
+ * @param {chrome.tabs.Tab} tab 
+ */
+const onTabUpdated = (tabId, changeInfo, tab) => {
+    if (tab.url.includes('teknoku.') && !tab.url.includes(SHALLTY_WEB)) {
+        chrome.tabs.update(tabId, {
+            url: `${SHALLTY_WEB}?shortlink=${tab.url}`
+        })
     }
-    
-    chrome.tabs.create({'url' : `${SHALLTY_WEB}?shortlink=${url}` });
 }
 
-const createContextMenusCallback = function(e) {
-    console.log(e);
-}
-
-const bypass = chrome.contextMenus.create({
-    'id': 'bypass_shortlink',
-    'title': 'Bypass Shortlink',
-    'contexts': ['link'],
-}, createContextMenusCallback );
-
-chrome.contextMenus.onClicked.addListener(clickHandler);
+chrome.tabs.onUpdated.addListener(onTabUpdated)
