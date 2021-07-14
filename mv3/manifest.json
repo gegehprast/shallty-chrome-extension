@@ -1,6 +1,6 @@
 {
-  "name": "Shallty",
-  "description": "Indonesian Fansub and Fanshare Shortlink Bypasser.",
+  "name": "Shallty - Shortlink Bypasser",
+  "description": "Indonesian Fansub and Fanshare Short Link Bypasser.",
   "version": "1.0",
   "manifest_version": 3,
   "background": {
