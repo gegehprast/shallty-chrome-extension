@@ -1,7 +1,7 @@
 {
   "name": "Shallty - Shortlink Bypasser",
   "description": "Indonesian Fansub and Fanshare Short Link Bypasser.",
-  "version": "1.0",
+  "version": "1.0.2",
   "manifest_version": 2,
   "background": {
     "scripts": ["background.js"],
