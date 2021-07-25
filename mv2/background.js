@@ -7,7 +7,7 @@ const clickHandler = function(e) {
         url = e.linkUrl;
     }
     
-    chrome.tabs.create({'url' : `${SHALLTY_WEB}?shortlink=${url}` });
+    chrome.tabs.create({'url' : `${SHALLTY_WEB}?shortlink=${encodeURIComponent(url)}&open_in_new_tab=false` });
 }
 
 const createContextMenusCallback = function(e) {
